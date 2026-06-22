@@ -6,8 +6,6 @@ This project is an interactive Power BI dashboard designed to analyze bank loan 
 
 The dashboard enables stakeholders to monitor key lending metrics, evaluate portfolio health, identify high-performing loan segments, and support data-driven decision-making.
 
-
-
 # Business Problem
 
 Financial institutions need visibility into loan performance to effectively manage risk, monitor repayments, and identify lending opportunities.
@@ -65,49 +63,6 @@ The dashboard was built using a star schema model.
 - Home Ownership
 - Employment Length
 
----
-
-## Key Performance Indicators (KPIs)
-
- Total Loan Applications
-
-```DAX
-Total Loan Applications =
-DISTINCTCOUNT(financial_loan[id])
-```
-
-### Total Funded Amount
-
-```DAX
-Total Funded Amount =
-SUM(financial_loan[LOAN_AMOUNT])
-```
-
-### Total Amount Received
-
-```DAX
-Total Amount Received =
-SUM(financial_loan[TOTAL_PAYMENT])
-```
-
-### Average Interest Rate
-
-```DAX
-Average Interest Rate =
-AVERAGE(financial_loan[INT_RATE])
-```
-
-### Average Debt-to-Income Ratio
-
-```DAX
-Average DTI =
-AVERAGE(financial_loan[DTI])
-```
-
----
-
-# Dashboard Features
-
 # Executive KPI Summary
 - Total Applications
 - Total Funded Amount
@@ -149,8 +104,6 @@ AVERAGE(financial_loan[DTI])
 - Dashboard Design
 - Business Intelligence
 - Data Visualization
-
----
 
 ## Author
 
